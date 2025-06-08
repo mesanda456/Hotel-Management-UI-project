@@ -1,0 +1,252 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Background Image */
+body {
+    background: url('hh.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff; /* Ensures text visibility */
+}
+
+/* Header */
+header {
+    background-color: rgba(0, 51, 102, 0.9);
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 60px;
+}
+
+header h1 {
+    font-size: 30px;
+    font-weight: bold;
+    flex: 1;
+    text-align: left;
+}
+
+/* Navigation Bar */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #002244;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+/* Facilities Section */
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #003366;
+    text-align: center;
+}
+
+/* Section Heading */
+section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #002244;
+}
+
+/* Paragraph Styling */
+section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Facility Images */
+section img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin: 15px 0;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hotel Room List */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+    margin: 20px auto;
+    max-width: 700px;
+    font-size: 18px;
+    color: #002244;
+}
+/* Hotel Information Section */
+.hotel-info {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #002244;
+    text-align: left;
+}
+
+/* Section Title */
+.hotel-info h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #004080;
+}
+
+/* Subtitles */
+.hotel-info h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #003366;
+    border-bottom: 2px solid #004080;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+.hotel-info p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Room Features List */
+.hotel-info ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.hotel-info ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.hotel-info ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #004080;
+    font-weight: bold;
+}
+
+/* Pricing Table */
+.pricing {
+    background-color: #1564b3;
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.pricing th, .pricing td {
+    border: 1px solid #1b1917;
+    padding: 12px;
+    text-align: left;
+}
+
+.pricing th {
+    background: #338000;
+    color: white;
+    font-size: 18px;
+}
+
+.pricing td {
+    background: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hotel-info {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .hotel-info h2 {
+        font-size: 22px;
+    }
+
+    .hotel-info h3 {
+        font-size: 20px;
+    }
+
+    .hotel-info p, .hotel-info ul li, .pricing th, .pricing td {
+        font-size: 16px;
+    }
+}
+
+
+/* Footer */
+footer {
+    background-color: #bd1111;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo {
+        width: 50px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        width: 95%;
+        padding: 15px;
+    }
+
+    section h1 {
+        font-size: 24px;
+    }
+
+    section p {
+        font-size: 16px;
+    }
+}

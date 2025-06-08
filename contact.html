@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="styles5.css">
+
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Hotel Logo" class="logo">
+    <h1>RIU Ahungalla</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="facilities.html">Facilities</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Get in Touch</h1>
+
+    
+    <!-- Contact Form -->
+    <form id="contactForm">
+      <table style="margin: 0 auto;" cellpadding="10">
+        <tr>
+          <td>Title :</td>
+          <td colspan="3">
+            <input type="checkbox" name="title" value="Mr"> Mr
+            <input type="checkbox" name="title" value="Mrs"> Mrs
+            <input type="checkbox" name="title" value="Ms"> Ms
+          </td>
+        </tr>
+        <tr>
+          <td><label for="firstName">First Name:</label></td>
+          <td><input type="text" id="firstName" name="firstName" required></td>
+          <td><label for="lastName">Last Name:</label></td>
+          <td><input type="text" id="lastName" name="lastName" required></td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label></td>
+          <td><input type="email" id="email" name="email" required></td>
+          <td><label for="confirmEmail">Confirm Email:</label></td>
+          <td><input type="email" id="confirmEmail" name="confirmEmail" required></td>
+        </tr>
+        <tr>
+          <td><label for="country">Country of Residence:</label></td>
+          <td>
+            <select id="country" name="country" required>
+              <option value="">Select Country</option>
+              <option value="Sri Lanka">Sri Lanka</option>
+              <option value="India">India</option>
+              <option value="UK">UK</option>
+              <option value="USA">USA</option>
+            </select>
+          </td>
+          <td><label for="roomType">Room Type:</label></td>
+          <td>
+            <select id="roomType" name="roomType" required>
+              <option value="">Select Room</option>
+              <option value="Standard">Standard</option>
+              <option value="Superior">Superior</option>
+              <option value="Junior Suite">Junior Suite</option>
+              <option value="Suite">Suite</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td><label for="arrivalDate">Arrival Date & Time:</label></td>
+          <td>
+            <input type="date" id="arrivalDate" name="arrivalDate" required>
+            <input type="time" id="arrivalTime" name="arrivalTime" required>
+          </td>
+          <td><label for="departureDate">Departure Date & Time:</label></td>
+          <td>
+            <input type="date" id="departureDate" name="departureDate" required>
+            <input type="time" id="departureTime" name="departureTime" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Free Pickup:</td>
+          <td colspan="3">
+            <input type="radio" id="pickupYes" name="pickup" value="Yes" required>
+            <label for="pickupYes">Yes</label>
+            <input type="radio" id="pickupNo" name="pickup" value="No">
+            <label for="pickupNo">No</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4" style="text-align: center;">
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+    
+
+
+    <!-- Google Map -->
+    <h2>Find Us Here</h2>
+    <div id="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6504462654157!2d80.03323999999999!3d6.30957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae1809faf58479d%3A0xcf5d53bd20f02c66!2sHotel%20Riu%20Sri%20Lanka!5e0!3m2!1sen!2slk!4v1740920733722!5m2!1sen!2slk" 
+        width="600" height="450" style="border:0;" allowfullscreen loading="lazy">
+      </iframe>
+    </div>
+
+    <!-- Relevant Image or Video -->
+    <h2>Our Hotel Experience</h2>
+    <div class="media">
+      <img src="pp.jpeg" alt="A scenic view of our hotel" width="100%">
+      <video width="100%" controls autoplay muted loop>
+        <source src="vidio2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
+    <!-- Contact Info -->
+    <p style="text-align: center; font-size: 18px; font-weight: bold;">
+      Contact Service: 011 211 2000
+    </p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RIU Ahungalla. All rights reserved.</p>
+  </footer>
+
+  <!-- Popup Structure -->
+  <div class="popup-overlay" id="popup">
+    <div class="popup-box" id="popupMessage">Message sent successfully!</div>
+  </div>
+
+  
+ 
+</body>
+</html>
